@@ -1,0 +1,71 @@
+Smart Household Electricity Consumption Prediction Using Machine Learning
+
+1. Project Overview
+This project predicts household electricity consumption using historical electricity data and Machine Learning algorithms.
+The main goal is to understand electricity usage patterns and help households manage their electricity consumption.
+2. Problem Statement
+Household electricity consumption changes depending on time and usage patterns. This project uses Machine Learning to predict electricity consumption based on previous readings and electrical measurements.
+3. Objectives
+- Predict household electricity consumption.
+- Analyze electricity usage patterns.
+- Identify high-consumption periods.
+- Help households manage electricity usage.
+
+4. Dataset
+- Original records: 260,640
+- Records after preprocessing: 255,429
+- Target variable: Global Active Power (kW)
+- Dataset frequency: Minute-level readings.
+- Dataset period: January 2007 to June 2007.
+
+5. Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- XGBoost
+- Streamlit
+
+6. Data Preprocessing
+- Handled missing values.
+- Removed duplicate records.
+- Converted data types.
+- Sorted records chronologically.
+- Created lag and rolling mean features.
+- Applied One-Hot Encoding.
+- Applied StandardScaler.
+- Split data into 80% training and 20% testing.
+
+7. Machine Learning Algorithms
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- SGD Regressor
+- Gradient Boosting Regressor
+- XGBoost Regressor
+8. Model Evaluation
+The XGBoost model achieved the following test results:
+
+| Metric | Result |
+| R² Score | 0.957 |
+| RMSE | 0.202 |
+| MAE | 0.080 |
+
+XGBoost was selected as the final model based on its performance.
+
+9. Deployment
+The project uses Streamlit to create a simple web application.
+The application displays predicted electricity consumption and estimated usage information.
+
+10. Conclusion
+This project demonstrates how Machine Learning can be used to predict household electricity consumption and understand usage patterns.
+
+11. Author
+**A. Mahesh**
+
+B.Tech – Artificial Intelligence and Machine Learning
+
+Sri Indu College of Engineering and Technology
+
